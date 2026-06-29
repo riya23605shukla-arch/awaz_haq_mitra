@@ -56,24 +56,14 @@ This repository is a **fully interactive, self-contained prototype** of that exp
 
 
 **WhatsApp Sandbox**
-<img src="assets/screenshots/02-whatsapp-sandbox.png" alt="WhatsApp simulator with sample scenarios and AI extraction hub" width="100%">
-
-</td>
-</tr>
-<tr>
-<td width="50%">
+<img width="1917" height="915" alt="02-whatsapp-sandbox png" src="https://github.com/user-attachments/assets/f946e728-d8e4-432d-aed7-c84b128f4263" />
 
 **Caseworker Portal**
-<img src="assets/screenshots/03-caseworker-portal.png" alt="Caseworker dashboard with beneficiary profile editor" width="100%">
-
-</td>
-<td width="50%">
+<img width="1913" height="906" alt="03-caseworker-portal png" src="https://github.com/user-attachments/assets/fcd8aedc-663a-4451-bf06-3c05c915e6e9" />
 
 **Scheme Explorer**
-<img src="assets/screenshots/04-scheme-explorer.png" alt="Scheme explorer listing PM-KISAN and Ayushman Bharat with eligibility details" width="100%">
+<img width="1915" height="898" alt="04-scheme-explorer png" src="https://github.com/user-attachments/assets/4d3ee9f6-9e50-4651-b6c1-4373693738a7" />
 
-</td>
-</tr>
 </table>
 
 ---
