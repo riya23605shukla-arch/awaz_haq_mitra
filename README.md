@@ -9,7 +9,7 @@
 [![Stack](https://img.shields.io/badge/stack-HTML%20%7C%20CSS%20%7C%20JavaScript-blue)]()
 [![Dependencies](https://img.shields.io/badge/dependencies-zero-brightgreen)]()
 [![License](https://img.shields.io/badge/license-unspecified-lightgrey)]()
-
+# visit https://awaz-haq-mitra.netlify.app/
 </div>
 
 ---
@@ -115,14 +115,6 @@ open index.html        # macOS
 start index.html       # Windows
 xdg-open index.html    # Linux
 ```
-
-> 💡 Tip: Some browsers restrict microphone access on files opened via `file://`. If voice recognition doesn't trigger, serve the folder locally instead:
-> ```bash
-> python3 -m http.server 8000
-> # then visit http://localhost:8000
-> ```
-
----
 
 ## 🔮 Roadmap / Next Steps
 
