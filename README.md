@@ -4,13 +4,14 @@
 ### *"My Rights Friend"*
 
 **A voice-first, vernacular AI casework platform that connects India's marginalized citizens to the government welfare schemes they already qualify for.**
-**https://awaz-mitra.netlify.app/**
+
 [![Status](https://img.shields.io/badge/status-prototype-orange)]()
 [![Stack](https://img.shields.io/badge/stack-HTML%20%7C%20CSS%20%7C%20JavaScript-blue)]()
 [![Dependencies](https://img.shields.io/badge/dependencies-zero-brightgreen)]()
 [![License](https://img.shields.io/badge/license-unspecified-lightgrey)]()
 
 </div>
+**https://awaz-mitra.netlify.app/**
 
 ---
 
