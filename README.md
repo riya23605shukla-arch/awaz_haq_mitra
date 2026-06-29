@@ -52,10 +52,8 @@ This repository is a **fully interactive, self-contained prototype** of that exp
 <td width="50%">
 
 **Home — Landing Page**
-<img src="assets/screenshots/01-home.png" alt="AWAAZ home screen showing the hero section and impact stats" width="100%">
+<img width="1918" height="908" alt="01-home png" src="https://github.com/user-attachments/assets/ca8cf76b-7218-4901-b9f5-1215af765ec5" />
 
-</td>
-<td width="50%">
 
 **WhatsApp Sandbox**
 <img src="assets/screenshots/02-whatsapp-sandbox.png" alt="WhatsApp simulator with sample scenarios and AI extraction hub" width="100%">
