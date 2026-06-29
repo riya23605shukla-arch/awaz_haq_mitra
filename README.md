@@ -11,7 +11,7 @@
 [![License](https://img.shields.io/badge/license-unspecified-lightgrey)]()
 
 </div>
-## https://awaz-mitra.netlify.app/
+Live demo -  https://awaz-mitra.netlify.app/
 
 ---
 
