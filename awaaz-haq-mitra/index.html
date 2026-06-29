@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWAAZ — Haq Mitra (My Rights Friend)</title>
+  <meta name="description" content="A voice-first vernacular AI casework platform matching marginalized Indian citizens with government welfare schemes.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="app-container">
+    
+    <!-- HEADER AND GLASS NAVIGATION -->
+    <header class="app-header">
+      <div class="brand">
+        <span class="brand-logo">🎙️</span>
+        <div class="brand-details">
+          <h1>AWAAZ</h1>
+          <p>Haq Mitra • हक मित्र</p>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <button class="nav-link active" data-tab="home-tab">🏠 Home</button>
+        <button class="nav-link" data-tab="whatsapp-tab">💬 WhatsApp Sandbox</button>
+        <button class="nav-link" data-tab="caseworker-tab">💼 Caseworker Portal</button>
+        <button class="nav-link" data-tab="schemes-tab">📜 Scheme Explorer</button>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-selector-box">
+          <label for="global-lang">🗣️ Language:</label>
+          <select id="global-lang">
+            <option value="en">English</option>
+            <option value="hi">हिंदी (Hindi)</option>
+            <option value="mr">मराठी (Marathi)</option>
+            <option value="te">తెలుగు (Telugu)</option>
+            <option value="ta">தமிழ் (Tamil)</option>
+            <option value="bn">বাংলা (Bengali)</option>
+          </select>
+        </div>
+        <button id="theme-toggle" class="action-btn">🌙 Dark Mode</button>
+      </div>
+    </header>
+
+    <!-- MAIN APP VIEWPORTS -->
+    <main class="app-content">
+
+      <!-- TAB 1: WELCOME SCREEN -->
+      <section id="home-tab" class="tab-pane active">
+        <div class="welcome-grid">
+          <div class="welcome-hero">
+            <h2>Empowering India's Last Mile with <span>Voice-First AI</span></h2>
+            <p>AWAAZ ("Haq Mitra") acts as a digital caseworker for citizens who qualify for government help but don't know it exists. By speaking naturally in their native tongue over WhatsApp, rural families are matched against hundreds of welfare programs, instantly generating document lists and pre-filled claims drafts.</p>
+            <div class="cta-group">
+              <button class="btn-primary" onclick="document.querySelector('[data-tab=\'whatsapp-tab\']').click()">Launch WhatsApp Sandbox</button>
+              <button class="btn-secondary" onclick="document.querySelector('[data-tab=\'schemes-tab\']').click()">Browse Scheme Database</button>
+            </div>
+            
+            <div class="stats-banner">
+              <div class="stat-card">
+                <div class="stat-icon">👥</div>
+                <div class="stat-info">
+                  <h3>48,204</h3>
+                  <p>Families Assisted</p>
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon">💰</div>
+                <div class="stat-info">
+                  <h3>₹2.4 Cr</h3>
+                  <p>Benefits Disbursed</p>
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon">📋</div>
+                <div class="stat-info">
+                  <h3>98.4%</h3>
+                  <p>Application Success Rate</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ecosystem-graphic">
+            <div class="graphic-header">
+              <h4>How Haq Mitra Works</h4>
+              <p>Bridging the voice-to-paper welfare gap</p>
+            </div>
+            
+            <div class="flow-timeline">
+              <div class="flow-step">
+                <div class="step-num">1</div>
+                <div class="step-details">
+                  <h5>Citizen Speaks naturally on WhatsApp</h5>
+                  <p>A rural farmer sends a voice note in Hindi or Tamil describing their situation (e.g. crop status, health issues, pregnancy).</p>
+                </div>
+              </div>
+              
+              <div class="flow-step">
+                <div class="step-num">2</div>
+                <div class="step-details">
+                  <h5>AI Parses Demographics & Matches Schemes</h5>
+                  <p>The AWAAZ model transcribes the speech, extracts key criteria (age, land, income), and matches them against central/state databases.</p>
+                </div>
+              </div>
+              
+              <div class="flow-step">
+                <div class="step-num">3</div>
+                <div class="step-details">
+                  <h5>Caseworker Prints Pre-filled Drafts</h5>
+                  <p>Volunteers open the case, verify the checklist, and print the pre-filled official form to finalize submission at local centers.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 2: WHATSAPP SIMULATOR -->
+      <section id="whatsapp-tab" class="tab-pane">
+        <div class="whatsapp-grid">
+          
+          <!-- Test Scenarios Side -->
+          <div class="scenarios-sidebar">
+            <h3>🧪 Sandbox Scenarios</h3>
+            <p class="sidebar-desc">Click a scenario below to simulate a citizen sending a vernacular voice note to the Haq Mitra WhatsApp number.</p>
+            
+            <div class="scenario-card" data-scenario="ramesh">
+              <div class="scenario-header">
+                <span class="scenario-name">Ramesh (Farmer)</span>
+                <span class="scenario-lang-badge">Hindi</span>
+              </div>
+              <p class="scenario-snippet">"मैं उत्तर प्रदेश से हूँ... खेती की ज़मीन है... पत्नी गर्भवती है..."</p>
+            </div>
+
+            <div class="scenario-card" data-scenario="savitri">
+              <div class="scenario-header">
+                <span class="scenario-name">Savitri (Domestic Helper)</span>
+                <span class="scenario-lang-badge">Marathi</span>
+              </div>
+              <p class="scenario-snippet">"मी महाराष्ट्रात राहते... माझे वय 62 वर्षे आहे... पती वारले आहेत..."</p>
+            </div>
+
+            <div class="scenario-card" data-scenario="anitha">
+              <div class="scenario-header">
+                <span class="scenario-name">Anitha (Laborer)</span>
+                <span class="scenario-lang-badge">Tamil</span>
+              </div>
+              <p class="scenario-snippet">"என் பெயர் அனிதா... தமிழ்நாட்டில்... தையல் கூலி வேலை..."</p>
+            </div>
+            
+            <div class="voice-record-dock">
+              <h5>🎙️ Try Your Own Voice</h5>
+              <p class="sidebar-desc">Speak into your microphone in Hindi, Tamil, or English (Web Speech API supported in Chrome).</p>
+              
+              <canvas id="visualizer" class="visualizer-canvas" width="260" height="40"></canvas>
+              
+              <button id="record-btn" class="btn-primary record-btn-trigger">
+                <span class="mic-icon">🎙️</span>
+                <span class="btn-label" style="display:none;">Record Voice</span>
+              </button>
+              
+              <button id="stop-speak-btn" class="btn-secondary-sm" style="display:none; color: var(--danger-color); border-color: var(--danger-color);">⏹️ Mute AI Voice Reader</button>
+            </div>
+          </div>
+
+          <!-- Phone Device Frame -->
+          <div class="phone-mockup-wrapper">
+            <div class="phone-device">
+              <div class="phone-screen">
+                <!-- WhatsApp Header -->
+                <div class="wa-chat-header">
+                  <div class="wa-avatar">HM</div>
+                  <div class="wa-user-details">
+                    <h4>Haq Mitra <span class="verified-badge">✔</span></h4>
+                    <p>AWAAZ Case Assistant • Online</p>
+                  </div>
+                </div>
+
+                <!-- Chat Area -->
+                <div id="chat-messages" class="wa-messages-area">
+                  <!-- Generated by JS -->
+                </div>
+
+                <!-- Input area -->
+                <div class="wa-input-area">
+                  <div class="wa-input-box">
+                    <input type="text" id="chat-text-input" placeholder="Type in Hindi, Tamil or English...">
+                  </div>
+                  <button id="send-btn" class="wa-send-btn">➤</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Realtime Entity Extractor -->
+          <div class="extractor-analysis-panel">
+            <div class="panel-header">
+              <h3>🧠 AI Extraction Hub</h3>
+              <span class="tag-badge">Live Parsing</span>
+            </div>
+
+            <div class="extractor-grid">
+              <div class="extracted-item">
+                <label>Full Name</label>
+                <span id="ext-name">Detecting...</span>
+              </div>
+              <div class="extracted-item">
+                <label>Age</label>
+                <span id="ext-age">Detecting...</span>
+              </div>
+              <div class="extracted-item">
+                <label>Gender</label>
+                <span id="ext-gender">Detecting...</span>
+              </div>
+              <div class="extracted-item">
+                <label>State</label>
+                <span id="ext-state">Detecting...</span>
+              </div>
+              <div class="extracted-item">
+                <label>Occupation</label>
+                <span id="ext-occupation">Detecting...</span>
+              </div>
+              <div class="extracted-item">
+                <label>Land Holding</label>
+                <span id="ext-land">Detecting...</span>
+              </div>
+              <div class="extracted-item">
+                <label>Annual Income</label>
+                <span id="ext-income">Detecting...</span>
+              </div>
+              <div class="extracted-item">
+                <label>Pregnant</label>
+                <span id="ext-preg">Detecting...</span>
+              </div>
+              <div class="extracted-item full-column" style="grid-column: span 2;">
+                <label>Housing Status</label>
+                <span id="ext-concrete">Detecting...</span>
+              </div>
+            </div>
+
+            <div class="matched-schemes-sidebar">
+              <h4>🎯 Matched Welfare Schemes</h4>
+              <ul id="ext-matched-schemes" class="matched-schemes-list">
+                <!-- Generated by JS -->
+              </ul>
+            </div>
+
+            <button id="save-case-btn" class="btn-primary" style="width: 100%;" disabled>Create Caseworker File</button>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- TAB 3: CASEWORKER DASHBOARD -->
+      <section id="caseworker-tab" class="tab-pane">
+        <div class="caseworker-layout">
+          
+          <!-- Cases Sidebar List -->
+          <div class="cases-sidebar">
+            <h3>📂 Active Citizen Files</h3>
+            <p class="sidebar-desc">Select a case file below to inspect, verify documents, and print application forms.</p>
+            <div id="case-list" style="display:flex; flex-direction:column; gap:0.75rem;">
+              <!-- Generated by JS -->
+            </div>
+          </div>
+
+          <!-- Main Case Workspace -->
+          <div class="dashboard-main-area">
+            
+            <!-- Column 1: Profile Editor -->
+            <div class="beneficiary-profile-editor">
+              <div class="panel-header">
+                <h4 id="case-name-header">Ramesh Kumar</h4>
+                <span id="case-id-header" class="case-id-tag">ID: case-001</span>
+              </div>
+              
+              <div class="edit-form-grid">
+                <div class="editor-section-title">Demographics</div>
+                <div class="edit-form-row">
+                  <label>Beneficiary Name</label>
+                  <input type="text" id="edit-name">
+                </div>
+                <div class="edit-form-row">
+                  <label>Age</label>
+                  <input type="number" id="edit-age">
+                </div>
+                <div class="edit-form-row">
+                  <label>Gender</label>
+                  <select id="edit-gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="edit-form-row">
+                  <label>State of Residence</label>
+                  <select id="edit-state">
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="West Bengal">West Bengal</option>
+                  </select>
+                </div>
+
+                <div class="editor-section-title">Economic Status</div>
+                <div class="edit-form-row">
+                  <label>Occupation</label>
+                  <select id="edit-occupation">
+                    <option value="farmer">Farmer</option>
+                    <option value="laborer">Laborer</option>
+                    <option value="domestic_worker">Domestic Worker</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="other">Other/Professional</option>
+                  </select>
+                </div>
+                <div class="edit-form-row">
+                  <label>Annual Income (₹)</label>
+                  <input type="number" id="edit-income">
+                </div>
+                <div class="edit-form-row">
+                  <label>Land Holding (Hectares)</label>
+                  <input type="number" id="edit-land" step="0.1">
+                </div>
+
+                <div class="editor-section-title">Indicators</div>
+                <label class="edit-checkbox-row"><input type="checkbox" id="edit-bpl"> BPL Card Holder</label>
+                <label class="edit-checkbox-row"><input type="checkbox" id="edit-preg"> Family Pregnancy Active</label>
+                <label class="edit-checkbox-row"><input type="checkbox" id="edit-disabled"> Physically Disabled</label>
+                <label class="edit-checkbox-row"><input type="checkbox" id="edit-concrete"> Has Concrete (Pucca) House</label>
+
+                <div class="editor-section-title">Contact & Banking (Prefilled Claims)</div>
+                <div class="edit-form-row">
+                  <label>Phone Number</label>
+                  <input type="text" id="edit-phone">
+                </div>
+                <div class="edit-form-row">
+                  <label>Aadhaar Number</label>
+                  <input type="text" id="edit-aadhaar">
+                </div>
+                <div class="edit-form-row">
+                  <label>Ration Card No.</label>
+                  <input type="text" id="edit-ration">
+                </div>
+                <div class="edit-form-row">
+                  <label>District</label>
+                  <input type="text" id="edit-district">
+                </div>
+                <div class="edit-form-row">
+                  <label>Village/Town</label>
+                  <input type="text" id="edit-village">
+                </div>
+                <div class="edit-form-row">
+                  <label>Bank Name</label>
+                  <input type="text" id="edit-bankname">
+                </div>
+                <div class="edit-form-row">
+                  <label>Account Number</label>
+                  <input type="text" id="edit-bankacc">
+                </div>
+                <div class="edit-form-row">
+                  <label>IFSC Code</label>
+                  <input type="text" id="edit-bankifsc">
+                </div>
+              </div>
+
+              <button id="save-case-details-btn" class="btn-primary" style="margin-top: 1rem;">Save Beneficiary Changes</button>
+            </div>
+
+            <!-- Column 2: Document Checklist & Form Review -->
+            <div class="application-preview-panel">
+              
+              <!-- Scheme form selection top menu -->
+              <div class="preview-actions-bar">
+                <div style="display:flex; align-items:center; gap:0.5rem;">
+                  <label for="active-case-scheme-select">Select Target Scheme:</label>
+                  <select id="active-case-scheme-select">
+                    <!-- Generated by JS -->
+                  </select>
+                </div>
+                <button id="print-form-btn" class="btn-primary">🖨️ Print Application & Checklist</button>
+              </div>
+
+              <div class="dashboard-main-area" style="grid-template-columns: 280px 1fr; margin-top: 0.5rem; gap:1.5rem; overflow:visible;">
+                
+                <!-- Inner Column A: Checklist checkboxes -->
+                <div class="document-checklist-panel">
+                  <h4>📁 Verification Checklist</h4>
+                  <p class="sidebar-desc">Tick verified documents provided by the citizen to update submission readiness.</p>
+                  <div id="doc-checklist" style="display:flex; flex-direction:column; gap:0.6rem;">
+                    <!-- Generated by JS -->
+                  </div>
+                </div>
+
+                <!-- Inner Column B: Prefilled Claim Preview -->
+                <div id="form-preview-container">
+                  <!-- Prefilled PDF paper mock generated here by JS -->
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- TAB 4: SCHEME DATABASE -->
+      <section id="schemes-tab" class="tab-pane">
+        <div class="schemes-explorer-layout">
+          
+          <!-- Left side category filters -->
+          <div class="explorer-filters">
+            <h4>📁 Categories</h4>
+            <button class="filter-btn active" data-category="All">All Sectors</button>
+            <button class="filter-btn" data-category="Agriculture">🌾 Agriculture</button>
+            <button class="filter-btn" data-category="Health">🏥 Healthcare</button>
+            <button class="filter-btn" data-category="Pension">👵 Senior Pension</button>
+            <button class="filter-btn" data-category="Housing">🏠 Housing</button>
+            <button class="filter-btn" data-category="Women & Child">👩 Women & Child</button>
+          </div>
+
+          <!-- Right side main body -->
+          <div class="explorer-main">
+            <div class="search-bar-container">
+              <input type="text" id="scheme-search" class="search-input-box" placeholder="Search by scheme name, ministry, or benefits description...">
+            </div>
+            
+            <div id="schemes-container">
+              <!-- Generated dynamically by JS -->
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- Loading scripts -->
+  <script src="schemes.js"></script>
+  <script src="whatsapp_engine.js"></script>
+  <script src="dashboard.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
